@@ -1,0 +1,332 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  
+ /* background-image: url('https://r4.wallpaperflare.com/wallpaper/247/131/743/reactjs-react-native-tech-developer-development-hd-wallpaper-f8269d8890c08cb8b02cb11e5812c4da.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;*/
+}
+
+.biggest {
+  font-size: 40px;
+  margin-left: 720px;
+  width: 100%;
+  animation: move-up 3s steps(100) infinite; 
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  right: 25;
+  top: 15; /* Top yerine bottom kullanarak en alttan başlamasını sağlıyoruz */
+  color: #FFA500;
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(-400px); /* Başlangıç değeri yukarıdan biraz aşağıda */
+  }
+  to {
+    transform: translateY(-600px); /* Bitiş değeri daha yukarıda bitmesini sağlar */
+  }
+}
+
+
+.biggest2 {
+
+  margin-left: 650px;
+  margin-top: 350px;
+  font-size: 18px;
+  
+}
+
+.biggest3 {
+
+  margin-right: 1300px;
+  margin-top: 60px;
+  font-size: 40px;
+  color: #FFA500;
+  
+}
+
+.titles {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #FFA500;
+}
+
+h2 {
+  color: #444444;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #555555;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.aboutme-text {
+  position: absolute; /* Mutlak konumlandırma */
+  top: 100px; /* Üstten 50 piksel aşağıda */
+  left: 20px; /* Soldan 20 piksel uzakta */
+  width: 1000px; /* Genişlik 300 piksel */
+  text-align: left; /* Metni sola hizala */
+  font-size: 18px; /* Metin boyutu 18 piksel */
+  line-height: 1.6; /* Satır yüksekliği */
+}
+.project-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-box-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+
+.portfolio-container {
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 70px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  margin-bottom: 40px;
+
+  color: #444444;
+}
+
+.left-menu {
+  margin-right: auto;
+  font-size: 20px;
+  
+}
+
+.right-menu span a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #444444;
+}
+
+.project-box h1 {
+  color: #444444;
+}
+
+.left-menu {
+  margin-right: auto;
+  color:#FFA500;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.right-menu span {
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+  color: #444444;
+}
+
+.right-menu {
+  display: flex;
+}
+
+.right-menu span a:hover {
+  color: #2978b5;
+}
+
+.right-menu span a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #2978b5;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.right-menu span a:hover::after {
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-right: 1300px;
+  display: flex;
+  flex-direction: column; /* Butonları dikey olarak sırala */
+}
+
+.buttons button {
+  border: 2px solid #FFA500;;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #FFA500;;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  margin: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 15px;
+}
+
+
+.buttons button:hover {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #fff;
+}
+
+.project-box h1 {
+  color: #FFA500;
+  font-size: 25px;
+}
+.projects-section {
+  margin: 20px;
+  margin-left: 650px;
+  align-items: left;
+  margin-top: -820px;
+}
+
+.project-box-container {
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 350px;
+  height: 280px;
+  margin: 5px;
+  padding: 40px 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-box p {
+  text-align: center;
+  font-size: 19px;
+}
+
+
+
+.project-links a {
+  color: #FFA500;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-links {
+  margin-top: 7px;
+}
+
+.skills-section {
+  margin: 20px;
+  margin-right: 1200px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-box {
+  color: #FFA500;
+  width: 70px;
+  height: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.contact-section {
+  margin: 20px;
+  margin-right: -540px;
+  text-align: center;
+  margin-top: -190px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.email-button,
+.linkedin-button,
+.GitHub-button {
+  border: 2px solid #FFA500;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #FFA500;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+  margin: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.email-button:hover,
+.linkedin-button:hover,
+.GitHub-button:hover {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #fff;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
